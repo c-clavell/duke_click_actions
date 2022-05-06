@@ -1,0 +1,13 @@
+
+python -m pip install
+python setup.py develop
+python setup.py build
+python setup.py sdist
+python -m pip install flake8
+
+$ ./activateCyg2.sh
+$ which pip
+$ which clickDemo
+
+make lint
+make all
