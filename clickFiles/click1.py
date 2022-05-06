@@ -19,6 +19,7 @@ def addx(number):
 def hello1(count, name, age):
     """Simple program that greets NAME for a total of COUNT times."""
     addx(age)
+    x=2
     for _ in range(count):
         click.echo(f"Hello, {name}  age={age}!")
 
