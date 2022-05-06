@@ -6,12 +6,17 @@ from tkinter import N
 import click
 
 
+
+def addx(number):
+    return number+2
+
 @click.command()
 @click.option("--count", default=1, help="Number of greetings.")
 @click.option("--name", prompt="Your firstname", help="The person to greet.", type=str)
 @click.option("--age", prompt="Your age", help="age int.",type=int)
 def hello1(count, name, age):
     """Simple program that greets NAME for a total of COUNT times."""
+    addx(age)
     for _ in range(count):
         click.echo(f"Hello, {name}  age={age}!")
 
