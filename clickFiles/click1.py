@@ -8,6 +8,7 @@ import click
 
 
 def addx(number):
+    d=0
     return number+2
 
 @click.command()
